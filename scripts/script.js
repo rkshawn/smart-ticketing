@@ -6,9 +6,9 @@ let totalAmount = 0;
 
 const allButton = document.getElementsByClassName('all-btn')
 for(const button of allButton){
-    button.addEventListener('click',function(){
+    button.addEventListener('click',function handleClick(){
        if(selectedSeat<=3){
-        
+        this.classList.toggle('bg-lime-500')
         seatLeft =seatLeft - 1;
         selectedSeat = selectedSeat + 1;
         totalAmount = price*selectedSeat
@@ -31,17 +31,17 @@ for(const button of allButton){
      tr.appendChild(td2)
      tr.appendChild(td3)
      tableBody.appendChild(tr)
- 
+
  
        }
       
     })
 }
 
-function bookTicket(){
-    const element = document.getElementById('a1')
-    element.classList.add('bg-lime-500')
-    
+
+
+function hidePopup(){
+   const popup= document.getElementById('my_modal_1')
+   popup.classList.add('hidden')
+
 }
-
-
