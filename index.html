@@ -34,7 +34,7 @@
        <h1 class="text-6xl">End-to-End Travel with</h1>
        <h1  class="text-6xl text-[#1DD100]">P Paribahan</h1>
        <p>Yes, you can run unit tests and view the results directly within the app. The  <br>integrated testing features allow for a streamlined .</p>
-       <button class="btn bg-[#1DD100] font-bold ">Buy Tickets</button>
+       <button  class="btn bg-[#1DD100] font-bold "><a href="#seat-book">Buy Tickets</a></button>
       </div>
     </header>
     <!-- header section ends -->
@@ -104,7 +104,7 @@
                        </div>
                        <div class="flex bg-[#1DD10026] items-center p-2 rounded-lg">
                             <div><img src="images/seat-green.png" alt=""></div>
-                            <div><p><span>40</span> seats left</p></div>
+                            <div><p><span id="seat-left">32</span> seats left</p></div>
                        </div>
                     </div>
                     <div class="bg-[#F7F8F8] rounded-3xl flex flex-col gap-y-10 p-8">
@@ -142,7 +142,7 @@
       <!-- ticket section ends -->
 
       <!--seat section starts  -->
-       <section class="flex items-center justify-between my-28 mx-32 gap-x-10">
+       <section id="seat-book" class="flex items-center justify-between my-28 mx-32 gap-x-10">
           <div class="flex-1 gap-y-5">
             <!-- seats  -->
             <h1 class="text-2xl font-semibold ">Select your seat</h1>
@@ -158,39 +158,39 @@
                    </div>
               </div>
               <div class="grid grid-cols-4 gap-2  ">
-                   <div ><button class="btn bg-[#F7F8F8]">A1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">A2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">A3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">A4</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">B1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">B2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">B3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">B4</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">C1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">C2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">C3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">C4</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">D1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">D2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">D3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">D4</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">E1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">E2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">E3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">E4</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F4</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">G1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">G2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">G3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">G4</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F1</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F2</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F3</button></div>
-                   <div ><button class="btn bg-[#F7F8F8]">F4</button></div>
-              </div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">A1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">A2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">A3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">A4</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">B1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">B2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">B3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">B4</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">C1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">C2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">C3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">C4</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">D1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">D2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">D3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">D4</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">E1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">E2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">E3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">E4</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F4</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">G1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">G2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">G3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">G4</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F1</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F2</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F3</button></div>
+                   <div ><button class="btn all-btn bg-[#F7F8F8]">F4</button></div>
+              </div> 
           </div>
           <hr>
           <div class="flex-1">
@@ -201,32 +201,31 @@
             <div class="overflow-x-auto">
               <table class="table">
                 <!-- head -->
-                <thead>
+                <thead id="table-body" class="text-xl font-semibold">
                   <tr>
                     
-                    <th>Seats <span class="bg-[#1DD100]">0</span></th>
+                    <th>Seats <span id="selected-seat" class="bg-[#1DD100] px-2 rounded-lg text-sm font-bold text-white">0</span></th>
                     <th>class</th>
                     <th>Price</th>
                   </tr>
+
                 </thead>
-                <tbody>
-                  <!-- row 1 -->
+                <tbody  class="text-xl font-semibold">
+                  
                   <tr>
-                    
-                    <td>C2</td>
-                    <td>Economy</td>
-                    <td>550</td>
+                    <th>Total Amount</th>
+                    <th></th>
+                    <th>BDT<span id="total-amount"></span></th>
                   </tr>
-                  <!-- row 2 -->
                   <tr>
-                    
-                    <td>B2</td>
-                    <td>Economy</td>
-                    <td>550</td>
+                    <th>Grand Total</th>
+                    <th></th>
+                    <th>BDT<span id="grand-amount"></span></th>
                   </tr>
                   
                 </tbody>
               </table>
+              
             </div>
 
             <form class="bg-[#F7F8F8] items-center" action="">
@@ -251,6 +250,9 @@
               <button class="btn w-full text-white bg-[#1DD100] mt-5">Next</button>
             </form>
             
+              
+            
+            
           </div>
        </section>
       <!--seat section ends  -->
@@ -259,5 +261,7 @@
     <!-- main section starts -->
 
     <footer></footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/utility.js"></script>
   </body>
 </html>
