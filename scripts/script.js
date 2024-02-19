@@ -34,12 +34,37 @@ for(const button of allButton){
 
  
        }
+       else{
+         alert('You have acceded your booking limit')
+       }
       
     })
 }
 
+// handle the apply Coupon key
+function handleApply(){
+   let totalAmount = document.getElementById('total-amount').innerText
+   const applyBtn =document.getElementById('apply-btn')
+   if(applyBtn.value ==='NEW 15' || applyBtn.value==='Coupon 20'){
+      
+       totalAmount = totalAmount*0.80
+       setInnerText('grand-total',totalAmount);
+       const hideInput = document.getElementById('hide-input')
+       hideInput.classList.add('hidden')
+      
+   }
+
+   else{
+      alert('please input a valid coupon')
+   }
+   
+   
+}
 
 
+
+
+// hide the popup message
 function hidePopup(){
    const popup= document.getElementById('my_modal_1')
    popup.classList.add('hidden')

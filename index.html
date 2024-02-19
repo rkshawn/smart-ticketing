@@ -162,7 +162,7 @@
       <!--seat section starts  -->
       <section
         id="seat-book"
-        class="flex items-center justify-between my-28 mx-32 gap-x-10"
+        class="flex items-center justify-between my-28 mx-32 gap-x-10 font-inter"
       >
         <div class="flex-1 gap-y-5">
           <!-- seats  -->
@@ -240,12 +240,20 @@
                 <tr>
                   <th>Total Amount</th>
                   <th></th>
-                  <th>BDT<span id="total-amount"></span></th>
+                  <th>BDT <span id="total-amount"></span></th>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <label id="hide-input" class="input input-bordered flex items-center gap-2">
+                      <input id="apply-btn" type="text" class="grow" placeholder="Have any Coupon?" />
+                      <span ><button id="active-btn" onclick="handleApply()"  class="btn bg-[#1DD100]">Apply</button></span>
+                    </label>
+                  </td>
                 </tr>
                 <tr>
                   <th>Grand Total</th>
                   <th></th>
-                  <th>BDT<span id="grand-amount"></span></th>
+                  <th>BDT  <span id="grand-total"></span></th>
                 </tr>
               </tbody>
             </table>
