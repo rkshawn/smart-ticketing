@@ -8,7 +8,7 @@ const allButton = document.getElementsByClassName('all-btn')
 for(const button of allButton){
     button.addEventListener('click',function handleClick(){
        if(selectedSeat<=3){
-        this.classList.toggle('bg-lime-500')
+        
         seatLeft =seatLeft - 1;
         selectedSeat = selectedSeat + 1;
         totalAmount = price*selectedSeat
@@ -31,7 +31,8 @@ for(const button of allButton){
      tr.appendChild(td2)
      tr.appendChild(td3)
      tableBody.appendChild(tr)
-
+     this.disabled = true;
+     this.style.backgroundColor = "#1DD100" ;
  
        }
        else{
